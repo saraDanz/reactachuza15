@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import Edit from "./components/Edit";
 
 function App() {
-  let selected = useSelector(sta => sta.selectedSong)
+  let selected = useSelector(sta => sta.selecteSong)
   let selectedFroEdit = useSelector(sta => sta.selectedSongForEdit)
   return (<>
     <List />

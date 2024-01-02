@@ -6,8 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import { songReducer } from './store/reducers/song';
 import { Provider } from 'react-redux';
+import { composeWithDevTools } from '@redux-devtools/extension';
 
-const myStore = createStore(songReducer);
+
+const myStore = createStore(songReducer,composeWithDevTools());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
